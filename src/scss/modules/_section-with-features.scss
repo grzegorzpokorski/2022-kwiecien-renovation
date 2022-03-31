@@ -1,0 +1,9 @@
+.section-with-features{
+	&__list{
+		row-gap: .75rem;
+
+		@include media-breakpoint-up(md){
+			row-gap: 1.5rem
+		}
+	}
+}

@@ -1,3 +1,13 @@
 @import './bootstrap/bootstrap';
 @import './fontawesome';
 @import './font';
+
+@import './modules/helpers';
+@import './modules/hero';
+@import './modules/banner';
+@import './modules/section-with-image';
+@import './modules/section-with-features';
+@import './modules/section-with-gallery';
+
+// @import './../../node_modules/aos/dist/aos.css';
+@import './../../node_modules/glightbox/dist/css/glightbox.css';

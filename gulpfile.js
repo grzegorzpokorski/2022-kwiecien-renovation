@@ -31,8 +31,8 @@ const fontawesome = function() {
 }
 
 const mainfont = function() {
-    return gulp.src(['./node_modules/@fontsource/poppins/files/*'])
-        .pipe(gulp.dest('dist/fonts/poppins'));
+    return gulp.src(['./node_modules/@fontsource/roboto/files/*'])
+        .pipe(gulp.dest('dist/fonts/roboto'));
 }
 
 const js = function(cb) {

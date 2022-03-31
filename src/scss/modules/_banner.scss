@@ -1,0 +1,17 @@
+.banner{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+
+	&:before{
+		content: '';
+		position: absolute;
+		inset: 0;
+		background-color: rgba($primary, .9);
+	}
+
+	&__content{
+		z-index: 2;
+	}
+}
