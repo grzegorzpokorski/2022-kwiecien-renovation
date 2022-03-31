@@ -35,6 +35,11 @@ const mainfont = function() {
         .pipe(gulp.dest('dist/fonts/roboto'));
 }
 
+const glightbox = function() {
+    return gulp.src(['./node_modules/glightbox/dist/**/*'])
+        .pipe(gulp.dest('dist/glightbox'));
+}
+
 const js = function(cb) {
     return webpack(require("./webpack.config.js"), function(err, stats) {
         if (err) throw err;
@@ -96,5 +101,6 @@ exports.mainfont = mainfont;
 exports.fonts = gulp.series(fontawesome, mainfont);
 exports.js = js;
 exports.images = images;
+exports.glightbox = glightbox;
 exports.server = server;
 exports.watch = watch;

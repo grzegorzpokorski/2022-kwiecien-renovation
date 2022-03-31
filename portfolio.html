@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="./dist/css/style.min.css">
-	<!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+	<link rel="stylesheet" href="./dist/glightbox/css/glightbox.min.css">
 </head>
 <body>
 
@@ -175,6 +175,14 @@
 	</footer>
 
 	<script src="./dist/js/bundle.js"></script>
+	<script src="./dist/glightbox/js/glightbox.min.js"></script>
+	<script>
+		const lightbox = GLightbox({
+			touchNavigation: true,
+			loop: true,
+			autoplayVideos: true
+		});
+	</script>
 
 </body>
 </html>
