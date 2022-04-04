@@ -4,6 +4,11 @@
 		row-gap: $spacer * 2;
 	}
 
+	&__item:hover &__icon-wrapper,
+	&__item:focus &__icon-wrapper{
+		background-color: $primary;
+	}
+
 	&__title{
 		font-size: 1.2rem;
 	}
@@ -13,7 +18,7 @@
 		min-width: 5rem;
 		height: 5rem;
 		background-color: $third;
-		// border-radius: 50%;
+		transition: all .35s;	
 	}
 
 	&__icon{
